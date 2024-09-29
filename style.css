@@ -1,0 +1,164 @@
+/* Style Global */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header */
+header {
+    background-color: #5f9ea0;
+    color: white;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Accueil */
+.section-hero {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #f5f5dc; /* Beige */
+}
+
+.carousel-item img {
+    height: 500px;
+    object-fit: cover;
+}
+
+h1 {
+    font-size: 2.5em;
+    margin-top: 20px;
+}
+
+p {
+    font-size: 1.2em;
+    margin-top: 10px;
+}
+
+.btn {
+    background-color: #5f9ea0;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+/* Section "Nos Commentateurs" */
+.card-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 15px;
+}
+
+.card {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 15px !important;
+    padding: 20px;
+    margin: 10px;
+    width: 30%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    min-width: 151px !important ;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+.card h3 {
+    color: #5f9ea0;
+}
+
+.card p {
+    font-size: 0.9em;
+}
+
+/* Google Maps */
+#map {
+    height: 400px;
+    width: 100%;
+    margin-top: 20px;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+@media (max-width: 768px) {
+    .section-hero {
+        padding: 30px 10px;  /* Réduit le padding sur mobile */
+    }
+
+    .carousel-item img {
+        height: 300px;  /* Réduit la hauteur des images dans le carrousel sur mobile */
+    }
+
+    .card-container {
+        flex-direction: column;  /* Affiche les cartes en colonne sur les petits écrans */
+        align-items: center;  /* Centre les cartes */
+    }
+
+    .card {
+        width: 90%;  /* Les cartes prennent presque toute la largeur de l'écran sur mobile */
+        max-width: 100%;  /* Empêche les cartes de dépasser la largeur de l'écran */
+    }
+}
+/* Section "À propos" */
+.section-apropos {
+    background-color: #fff;
+    padding: 40px 20px;
+    margin: 20px auto;
+    max-width: 900px;  /* Limite la largeur de la section pour plus de lisibilité */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.section-apropos h2 {
+    color: #5f9ea0;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.section-apropos p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    color: #333;
+}
+
+.section-apropos strong {
+    color: #5f9ea0;  /* Met en avant les informations importantes */
+}
+
+.section-apropos a {
+    color: #5f9ea0;
+    text-decoration: none;
+}
+
+.section-apropos a:hover {
+    text-decoration: underline;  /* Sous-ligne le numéro de téléphone au survol */
+}
